@@ -1,12 +1,17 @@
 package br.dev.lucas.doctorateexamples.bankingsystem
 
-import kotlin.test.*
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.assertFalse
+import org.junit.jupiter.api.Assertions.assertTrue
+import org.junit.jupiter.api.BeforeEach
+import org.junit.jupiter.api.Test
+
 
 class BankAccountTest {
   private lateinit var janeAccount: BankAccount
   private lateinit var tenDollars: Money
 
-  @BeforeTest
+  @BeforeEach
   fun setup() {
     val bankingSystem = BankingSystem()
     val unitedStatesMint = bankingSystem.createMint(Currency.USD)
