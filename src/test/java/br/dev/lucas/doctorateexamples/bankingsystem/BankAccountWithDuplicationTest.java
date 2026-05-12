@@ -1,4 +1,4 @@
-package br.dev.lucas.doctorateexamples.bankingsystem.rozarefactoring;
+package br.dev.lucas.doctorateexamples.bankingsystem;
 
 import br.dev.lucas.doctorateexamples.bankingsystem.*;
 import org.junit.jupiter.api.Test;
@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class BankAccountWithDuplicationTest {
+class BankAccountWithDuplicationJavaTest {
   @Test
   void shouldWithdrawFromAccount() {
     BankingSystem bankingSystem = new BankingSystem();

@@ -1,6 +1,4 @@
-package br.dev.lucas.br.dev.lucas.doctorateexamples.university
-
-import br.dev.lucas.br.dev.lucas.br.dev.lucas.doctorateexamples.university.Student
+package br.dev.lucas.doctorateexamples.university
 
 class University(name: String) {
   fun admit(student: String): Student {

@@ -1,4 +1,5 @@
 plugins {
+  java
   kotlin("jvm") version "2.1.20"
 }
 
@@ -11,7 +12,11 @@ val configuration: RepositoryHandler.() -> Unit = {
 repositories(configuration)
 
 dependencies {
-  testImplementation("org.junit.jupiter:junit-jupiter:5.10.2")
+  testImplementation(platform("org.junit:junit-bom:5.10.2"))
+  testImplementation("org.junit.jupiter:junit-jupiter-api")
+  testImplementation("org.junit.jupiter:junit-jupiter-params")
+  testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+  testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
 tasks.test {

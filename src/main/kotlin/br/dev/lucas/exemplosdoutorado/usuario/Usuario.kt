@@ -1,4 +1,4 @@
-package br.dev.lucas.br.dev.lucas.exemplosdoutorado.usuario
+package br.dev.lucas.exemplosdoutorado.usuario
 
 class Usuario {
   fun fixarNome(nome: String) {

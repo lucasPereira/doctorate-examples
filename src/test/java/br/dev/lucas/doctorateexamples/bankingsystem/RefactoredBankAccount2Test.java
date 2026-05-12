@@ -1,4 +1,4 @@
-package br.dev.lucas.doctorateexamples.bankingsystem.rozarefactoring;
+package br.dev.lucas.doctorateexamples.bankingsystem;
 
 import br.dev.lucas.doctorateexamples.bankingsystem.*;
 import org.junit.jupiter.api.BeforeEach;
