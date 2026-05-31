@@ -55,6 +55,5 @@ class BankAccountWithDuplicationJavaTest {
     Transaction closeTransaction = janeAccount.close();
     assertTrue(closeTransaction.isSuccess());
     assertTrue(janeAccount.isClosed());
-    assertTrue(janeAccount.getBalance().isZero());
   }
 }

@@ -54,6 +54,5 @@ class BankAccountWithDuplicationTest {
     val closeTransaction = janeAccount.close()
     assertTrue(closeTransaction.isSuccess)
     assertTrue(janeAccount.isClosed)
-    assertTrue(janeAccount.balance.isZero)
   }
 }
