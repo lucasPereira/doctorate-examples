@@ -43,7 +43,7 @@ class BankAccountWithDuplicationTest {
     val tenDollars = unitedStatesMint.issue(10)
     val withdrawTransaction = janeAccount.withdraw(tenDollars)
     assertFalse(withdrawTransaction.isSuccess)
-    assertEquals(tenDollars, janeAccount.balance)
+    assertTrue(janeAccount.balance.isZero)
   }
 
   @Test

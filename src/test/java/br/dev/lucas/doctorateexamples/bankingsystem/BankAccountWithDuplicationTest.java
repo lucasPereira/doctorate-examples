@@ -44,7 +44,7 @@ class BankAccountWithDuplicationJavaTest {
     Money tenDollars = unitedStatesMint.issue(10);
     Transaction withdrawTransaction = janeAccount.withdraw(tenDollars);
     assertFalse(withdrawTransaction.isSuccess());
-    assertEquals(tenDollars, janeAccount.getBalance());
+    assertTrue(janeAccount.getBalance().isZero());
   }
 
   @Test
